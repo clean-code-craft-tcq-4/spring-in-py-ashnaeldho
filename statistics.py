@@ -1,7 +1,7 @@
 
 def calculateStats(numbers):
   
-  avg = fmean(numbers);
+  avg = statistics.mean(numbers);
   max = max(numbers);
   min = min(numbers);
   return avg, max, min
