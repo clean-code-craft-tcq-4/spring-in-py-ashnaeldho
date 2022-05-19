@@ -1,4 +1,4 @@
-
+import statistics
 def calculateStats(numbers):
   
   avg = statistics.mean(numbers);
