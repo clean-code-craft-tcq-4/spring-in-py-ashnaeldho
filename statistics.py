@@ -1,3 +1,4 @@
 
 def calculateStats(numbers):
-  return None
+  print(numbers)
+  return numbers
