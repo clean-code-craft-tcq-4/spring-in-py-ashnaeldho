@@ -9,7 +9,8 @@ def calculateStats(numbers):
   else:
 
     print("a is a tuple")
-  
+    
+  print(numbers)
   #sum = 0;
   #for n in numbers:
   #  sum = sum + numbers[n];
