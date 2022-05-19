@@ -13,6 +13,6 @@ def calculateStats(numbers):
   total=sum(numbers[0:element+1])
   avg = total/length_1; 
   #avg = mean(numbers);
-  max = max(numbers);
-  min = min(numbers);
-  return avg, max, min
+  max_num = max(numbers);
+  min_num = min(numbers);
+  return avg, max_num, min_num
