@@ -1,5 +1,5 @@
 import unittest
-import statistics
+import statistics import fmean
 
 class StatsTest(unittest.TestCase):
   def test_report_min_max_avg(self):
