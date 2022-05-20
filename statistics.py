@@ -7,16 +7,18 @@ def calculateStats(numbers):
   
     
   print(numbers)
-  if (list(numbers) or len(numbers)) == 0:
-    sys.exit()
-  else:
+  if (list(numbers) or len(numbers)) != 0:
     total = sum(map(float,numbers));
+    avg = total/length_1;
+    
+  else:
+    sys.exit()
   
   
  
   #total = sum(map(float,numbers));
   print("total :", total);
-  avg = total/length_1;
+  #avg = total/length_1; --- 
   #avg = mean(numbers);
   #avg = reduce(lambda x, y: x + y, numbers) / len(numbers)
   print("average :", avg);
