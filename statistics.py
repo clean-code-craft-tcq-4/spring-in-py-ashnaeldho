@@ -1,13 +1,14 @@
 #from statistics import mean
 #from functools import reduce
 #import math
+import sys
 def calculateStats(numbers):
   length_1 = len(numbers);
   
     
   print(numbers)
   if list(numbers) == 0:
-    break
+    sys.exit()
   else:
     total = sum(map(float,numbers));
   
