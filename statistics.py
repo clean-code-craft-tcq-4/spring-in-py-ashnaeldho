@@ -7,7 +7,7 @@ def calculateStats(numbers):
   
     
   print(numbers)
-  if list(numbers) == 0:
+  if (list(numbers) || len(numbers)) == 0:
     sys.exit()
   else:
     total = sum(map(float,numbers));
