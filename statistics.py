@@ -11,6 +11,8 @@ def calculateStats(numbers):
     print("a is a tuple")
     
   print(numbers)
+  for ele in range(0, len(numbers)):
+    total = total + numbers[ele]
   #sum = 0;
   #for n in numbers:
   #  sum = sum + numbers[n];
@@ -20,8 +22,8 @@ def calculateStats(numbers):
   #      numbers[element]=float(numbers[element])
   #      numbers[element]=math.pow(numbers[element],2)
   #total=sum(numbers[0:element+1])
-  #avg = total/length_1; 
+  avg = total/length_1; 
   #avg = sum(numbers);
   #max_num = max(numbers);
   #min_num = min(numbers);
-  return None #avg, max_num, min_num
+  return avg #, max_num, min_num
