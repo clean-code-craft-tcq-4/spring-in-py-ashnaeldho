@@ -1,4 +1,5 @@
-from statistics import mean
+#from statistics import mean
+from functools import reduce
 #import math
 def calculateStats(numbers):
   length_1 = len(numbers);
@@ -10,7 +11,8 @@ def calculateStats(numbers):
  
   #total = sum(map(float,numbers));
   #avg = total/length_1;
-  avg = mean(numbers);
+  #avg = mean(numbers);
+  avg = reduce(lambda x, y: x + y, numbers) / len(numbers)
   print("average :", avg);
   
   max_num = max(numbers);
