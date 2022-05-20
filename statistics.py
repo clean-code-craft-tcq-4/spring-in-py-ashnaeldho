@@ -2,6 +2,7 @@
 #import math
 def calculateStats(numbers):
   length_1 = len(numbers);
+  total = 0;
   if type(numbers) == list:
 
     print("a is a list")
