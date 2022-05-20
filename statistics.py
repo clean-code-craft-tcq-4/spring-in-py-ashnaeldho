@@ -25,6 +25,7 @@ def calculateStats(numbers):
   #total=sum(numbers[0:element+1])
   avg = total/length_1; 
   print("average :", avg);
+  print("index of average : ", index('avg'));
   #avg = sum(numbers);
   #max_num = max(numbers);
   #min_num = min(numbers);
