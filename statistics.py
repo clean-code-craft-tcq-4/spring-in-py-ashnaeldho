@@ -11,8 +11,8 @@ def calculateStats(numbers):
     total = sum(map(float,numbers));
     avg = total/length_1;
     
-  else:
-    sys.exit()
+  #else:
+    #sys.exit()
   
   
  
