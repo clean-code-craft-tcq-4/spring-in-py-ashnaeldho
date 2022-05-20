@@ -6,10 +6,15 @@ def calculateStats(numbers):
   
     
   print(numbers)
+  if list(numbers) == 0:
+    break;
+else:
+    total = sum(map(float,numbers));
   
   
  
-  total = sum(map(float,numbers));
+  #total = sum(map(float,numbers));
+  print("total :", total);
   avg = total/length_1;
   #avg = mean(numbers);
   #avg = reduce(lambda x, y: x + y, numbers) / len(numbers)
