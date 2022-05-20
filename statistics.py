@@ -1,4 +1,4 @@
-#from statistics import mean
+from statistics import mean
 #import math
 def calculateStats(numbers):
   length_1 = len(numbers);
