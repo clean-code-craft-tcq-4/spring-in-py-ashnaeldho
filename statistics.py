@@ -1,7 +1,7 @@
 #from statistics import mean
 #from functools import reduce
 #import math
-import sys
+#import sys
 def calculateStats(numbers):
   length_1 = len(numbers);
   
