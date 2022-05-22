@@ -29,3 +29,9 @@ def calculateStats(numbers):
   min_num = min(numbers);
   print("min value :", min_num);
   return avg, max_num, min_num
+
+def EmailAlert(): 
+    pass
+  
+def LEDAlert(): 
+    pass
