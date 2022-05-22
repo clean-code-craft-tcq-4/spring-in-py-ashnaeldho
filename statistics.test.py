@@ -15,6 +15,12 @@ class StatsTest(unittest.TestCase):
     # nan (not-a-number), as defined in the math package
     # Design the assert here.
     # Use nan and isnan in https://docs.python.org/3/library/math.html
+    
+  def EmailAlert(): 
+    pass
+  
+  def LEDAlert(): 
+    pass
 
   def test_raise_alerts_when_max_above_threshold(self):
     emailAlert = EmailAlert()
