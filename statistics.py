@@ -1,17 +1,17 @@
 #import 
-#def calculateStats(numbers):
-#  length_1 = len(numbers);
-  
-    
-#  print(numbers)
-#  while(1):
-#    if (list(numbers) or len(numbers)) != 0:
-#      total = sum(map(float,numbers));
-#      avg = total/length_1;
-    
- #   else:
-  #    continue
-  
+import math as m
+def calculateStats(numbers):
+  if type(numbers) == list:
+    length = len(numbers)
+    for i in range(length):
+      if type(numbers[i]) == str:
+        value = m.isnan(i)
+        return value
+      elif (type(numbers[i]) == float) or (type(numbers[i]) == int) and (length != 0):
+        avgVal = sum(numbers) / length
+        maxVal = max(numbers)
+        minVal = min(numbers)
+        return avgVal,minVal,maxVal
   
  
   
@@ -25,17 +25,6 @@
   #print("min value :", min_num);
   #return avg, max_num, min_num
 
-import math as m
 
-def calculateStats(numbers):
-  if type(numbers) == list:
-    l = len(numbers)
-    for i in range(l):
-      if type(numbers[i]) == str:
-        value = m.isnan(i)
-        return value
-      elif (type(numbers[i]) == float) or (type(numbers[i]) == int) and (l != 0):
-        avgVal = sum(numbers) / l
-        maxVal = max(numbers)
-        minVal = min(numbers)
-        return avgVal,minVal,maxVal
+
+
