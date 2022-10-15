@@ -18,6 +18,9 @@ def EmailAlert():
 
 def LEDAlert():
   return 1
+
+def StatsAlerter(numbers):
+  return 10.5
      # elif (type(numbers[i]) == 0) or (type(numbers[i]) == 0) and (length = 0):
      #   avgVal = nan
      #   maxVal = nan
