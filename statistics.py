@@ -12,18 +12,13 @@ def calculateStats(numbers):
         maxVal = max(numbers)
         minVal = min(numbers)
         return avgVal,minVal,maxVal
+     # elif (type(numbers[i]) == 0) or (type(numbers[i]) == 0) and (length = 0):
+     #   avgVal = nan
+     #   maxVal = nan
+     #   minVal = nan
+     #   return avgVal,minVal,maxVal
   
  
-  
-  #print("total :", total);
- 
-  #print("average :", avg);
-  
-  #max_num = max(numbers);
-  #print("max value :", max_num);
-  #min_num = min(numbers);
-  #print("min value :", min_num);
-  #return avg, max_num, min_num
 
 
 
