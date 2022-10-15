@@ -13,6 +13,15 @@ class StatsTest(unittest.TestCase):
   def test_avg_is_nan_for_empty_input(self):
     computedStats = statistics.calculateStats([])
     self.assertEqual(computedStats, None)
+   # numberset[] = { 0 }
+   # setlength = len(numberset) / len(numberset[0]);
+   # computedStats = statistics.calculateStats([numberset, setlength])
+   # self.assertTrue(math.isnan(computedStats[0]))
+   # self.assertTrue(math.isnan(computedStats[1]))
+   # self.assertTrue(math.isnan(computedStats[2]))
+    
+    # --  computedStats = statistics.calculateStats([])
+    # -- self.assertEqual(computedStats, None)
     # All fields of computedStats (average, max, min) must be
     # nan (not-a-number), as defined in the math package
     # Design the assert here.
