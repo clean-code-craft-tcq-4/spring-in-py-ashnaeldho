@@ -12,6 +12,16 @@ def calculateStats(numbers):
         maxVal = max(numbers)
         minVal = min(numbers)
         return avgVal,minVal,maxVal
+      
+def EmailAlert():
+  emailAlertCallCount = 0
+  emailAlertCallCount + = 1
+  return emailAlertCallCount
+
+def LEDAlert():
+  ledAlertCallCount = 0
+  ledAlertCallCount + = 1
+  return ledAlertCallCount
      # elif (type(numbers[i]) == 0) or (type(numbers[i]) == 0) and (length = 0):
      #   avgVal = nan
      #   maxVal = nan
