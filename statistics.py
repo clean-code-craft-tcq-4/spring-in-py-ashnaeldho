@@ -13,11 +13,13 @@ def calculateStats(numbers):
         minVal = min(numbers)
         return avgVal,minVal,maxVal
       
-def EmailAlert():
-  return emailSent = False
+def EmailAlert(bool):
+  emailSent=False
+  return emailSent
 
-def LEDAlert():
-  return ledAlert = True
+def LEDAlert(bool):
+  ledAlert = True
+  return ledAlert
 
 def StatsAlerter(maxThreshold):
   computedStats = statistics.calculateStats([22.6, 12.5, 3.7])
