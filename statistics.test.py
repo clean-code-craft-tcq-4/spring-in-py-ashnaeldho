@@ -1,5 +1,8 @@
 import unittest
 import statistics
+from statistics import EmailAlert
+from statistics import LEDAlert
+from statistics import StatsAlerter
 import math as m
 
 class StatsTest(unittest.TestCase):
@@ -28,15 +31,12 @@ class StatsTest(unittest.TestCase):
     # Use nan and isnan in https://docs.python.org/3/library/math.html
 
   def test_raise_alerts_when_max_above_threshold(self):
-    emailAlert = statistics.EmailAlert()
-    ledAlert = statistics.LEDAlert()
+    emailAlert = EmailAlert()
+    ledAlert = LEDAlert()
     maxThreshold = 10.5
     statsAlerter = StatsAlerter(maxThreshold, [emailAlert, ledAlert])
-    # statsAlerter.checkAndAlert([22.6, 12.5, 3.7])
+    statsAlerter.checkAndAlert([22.6, 12.5, 3.7])
     self.assertTrue(emailAlert.emailSent)
     self.assertTrue(ledAlert.ledGlows)
-    #self.assertTrue(emailAlert.emailSent)
-    #self.assertTrue(ledAlert.ledGlows)
-
- if __name__ == "__main__":
-   unittest.main()
+if __name__ == "__main__":
+  unittest.main()
