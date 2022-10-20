@@ -14,16 +14,22 @@ def calculateStats(numbers):
         return avgVal,minVal,maxVal
       
 def EmailAlert():
-  return False
+  return emailSent = False
 
 def LEDAlert():
-  return True
+  return ledAlert = True
 
 def StatsAlerter(maxThreshold):
   computedStats = statistics.calculateStats([22.6, 12.5, 3.7])
-  if computedStats[2] > maxThreshold
-  emailAlert = True
-  ledAlert = True
+  if computedStats[2] > maxThreshold:
+    EmailAlert.emailSent = True
+    LEDAlert.ledAlert = True
+  else:
+    EmailAlert.emailSent = False
+    LEDAlert.ledAlert = False
+      
+  
+  
      # elif (type(numbers[i]) == 0) or (type(numbers[i]) == 0) and (length = 0):
      #   avgVal = nan
      #   maxVal = nan
