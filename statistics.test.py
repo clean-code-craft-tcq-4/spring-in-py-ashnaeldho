@@ -38,5 +38,5 @@ class StatsTest(unittest.TestCase):
     #self.assertTrue(emailAlert.emailSent)
     #self.assertTrue(ledAlert.ledGlows)
 
-if __name__ == "__main__":
-  unittest.main()
+ if __name__ == "__main__":
+   unittest.main()
