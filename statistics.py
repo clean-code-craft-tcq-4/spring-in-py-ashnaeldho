@@ -14,11 +14,11 @@ def calculateStats(numbers):
         return avgVal,minVal,maxVal
       
 def EmailAlert():
-  return 1
+  return False
 
 def LEDAlert():
-  return 1
-
+  return True
+'''
 def StatsAlerter():
   return 10.5
      # elif (type(numbers[i]) == 0) or (type(numbers[i]) == 0) and (length = 0):
@@ -27,7 +27,7 @@ def StatsAlerter():
      #   minVal = nan
      #   return avgVal,minVal,maxVal
   
- 
+ '''
 
 
 
